@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow" />
+    <meta property="og:url" content="http://example.com/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://example.com/images/ogp.jpg">
+    <meta name="description" content="守口市の小さな洋菓子店、きむら洋菓子店のお問い合わせページです。ご予約もお待ちしております。">
+    <title>きむら洋菓子店|お問い合わせ</title>
+    <!-- ファビコン -->
+    <link rel="icon" type="image/png" href="image/favicon.svg">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header wrapper" id="nav">
+        <div>
+            <h1>
+                <a href="index.html"><img class="logo" src="image/logo.png" alt="きむら洋菓子店 お問い合わせ"></a>
+            </h1>
+        </div>
+        <div class="openbtn"><span></span><span></span><span></span></div>
+        <div>
+            <dl class="header-info">
+                <dt>TEL</dt>
+                <dd><a href="tel:0000-00-0000">0000-00-0000</a></dd>
+                <dt>住所</dt>
+                <dd>〒000-0000大阪府守口市○○町0-0</dd>
+            </dl>
+            <nav class="font-kiwi" id="g-nav">
+                <div id="g-nav-list">
+                    <ul class="main-nav">
+                        <li><a href="sweets.html">商品紹介</a></li>
+                        <li><a href="about.html">お店について</a></li>
+                        <li><a href="contact.html">お問い合わせ・ご予約</a></li>
+                        <li><a href="access.html">アクセス</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="container">
+    <div class="cover cover-contact">
+        <h2 class="page-title font-kiwi">お問い合わせ・ご予約</h2>
+    </div>
+
+    <main class="wrapper">
+        <div class="contact">
+            <p>
+                ご意見などございましたらこちらのメールフォームからお願いいたします。<br>
+                バースデーケーキのご予約もこちらかお電話にて受け付けております。<br>
+                バースデーケーキは3日前までのご連絡をお願いいたします。
+            </p>
+            <div>
+                <form action="contact_mail.html" method="post" name="contact-form" >
+                    <dl>
+                        <dt id="name">名前：</dt>
+                        <dl><input type="text" name="name" value=""></dl>
+                        <dt id="kana">ふりがな：</dt>
+                        <dl><input type="text" name="kana" value=""></dl>
+                        <dt id="email">メールアドレス：</dt>
+                        <dl><input type="email" name="email"value=""></dl>
+                        <dt id="tel">お電話番号：</dt>
+                        <dl><input type="tel" name="tel"value=""></dl>
+                        <dt id="address">ご住所：</dt>
+                        <dl><input type="text" name="address"value=""></dl>
+                        <dt id="message">お問い合わせ本文：</dt>
+                        <dl><textarea name="message" value=""></textarea></dl>
+                    </dl>
+                    <button type="submit">送信</button>
+                </form>
+            </div>
+            <div id="error_message"></div>
+            <p>
+                バースデーケーキのご予約の際は<br>
+                ・日付、受取時間（営業時間内でお願いいたします）<br>
+                ・ケーキの種類<br>
+                ・プレートへのメッセージ<br>
+                のご記入をお願いいたします。また、アレルギーへの対応はできませんので、ご了承ください。
+            </p>
+        </div>
+        <p id="page-top"><a href="#">Page Top</a></p>
+    </main>
+
+    <footer>
+        <div class="footer-btn">
+            <a href="contact.html">お問い合わせ・ご予約</a>
+            <a href="access.html">アクセスマップ</a>
+        </div>
+        <dl>
+            <dt>営業時間</dt>
+            <dd>10:00～19:00</dd>
+            <dt>定休日</dt>
+            <dd>火曜日<br>(祝日の場合翌水曜日が休日になります)</dd>
+            <dt>TEL</dt>
+            <dd><a href="tel:0000-00-0000">0000-00-0000</a></dd>
+            <dt>住所</dt>
+            <dd>〒000-0000大阪府守口市○○町0-0</dd>
+        </dl>
+        <div class="copyright">
+            <small>&copy; 2024 きむら洋菓子店</small>
+        </div>
+    </footer>
+</div>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
